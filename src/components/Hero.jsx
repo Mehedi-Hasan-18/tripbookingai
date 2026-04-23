@@ -3,6 +3,9 @@ import SearchForm from "@/components/SearchForm";
 import TrustedBy from "@/components/TrustedBy";
 import Image from "next/image";
 import PopularDestinations from "./PopularDestinations";
+import FeaturedTours from "./FeaturedTours";
+import ImageCarousel from "./ImageCarousol";
+import TopRated from "./TopRated";
 
 const Hero = () => {
   return (
@@ -54,6 +57,14 @@ const Hero = () => {
 
       <div>
         <PopularDestinations />
+      </div>
+
+      <div>
+        <FeaturedTours />
+      </div>
+
+      <div>
+        <TopRated />
       </div>
     </main>
   );

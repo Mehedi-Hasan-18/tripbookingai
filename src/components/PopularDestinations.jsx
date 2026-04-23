@@ -13,9 +13,9 @@ const destinations = [
 
 const PopularDestinations = () => {
   return (
-    <div className="max-w-5xl mx-auto mt-14">
+    <div className="max-w-5xl mx-auto mt-20">
       {/* Header */}
-      <h1 className="text-3xl font-semibold">Popular Destination</h1>
+      <h1 className="text-3xl font-bold">Popular Destination</h1>
       <p className="text-gray-500 text-sm mt-1">
         Favourite destinations based on customer review
       </p>
