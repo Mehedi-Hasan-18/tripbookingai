@@ -6,6 +6,7 @@ import PopularDestinations from "./PopularDestinations";
 import FeaturedTours from "./FeaturedTours";
 import ImageCarousel from "./ImageCarousol";
 import TopRated from "./TopRated";
+import Footer from "./Footer";
 
 const Hero = () => {
   return (
@@ -66,7 +67,9 @@ const Hero = () => {
       <div>
         <TopRated />
       </div>
+
     </main>
+    
   );
 };
 
