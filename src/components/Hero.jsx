@@ -2,6 +2,7 @@ import Navber from "@/components/Navber";
 import SearchForm from "@/components/SearchForm";
 import TrustedBy from "@/components/TrustedBy";
 import Image from "next/image";
+import PopularDestinations from "./PopularDestinations";
 
 const Hero = () => {
   return (
@@ -11,7 +12,6 @@ const Hero = () => {
         className="relative w-full min-h-130 md:min-h-145 bg-cover bg-center bg-no-repeat flex flex-col"
         style={{ backgroundImage: "url('/Background.png')" }}
       >
-
         {/* Navbar */}
         <Navber />
 
@@ -19,7 +19,12 @@ const Hero = () => {
         <div className="relative z-10 flex flex-col items-center justify-center flex-1 px-6 pb-16 text-center">
           {/* Explore badge */}
           <div className="flex items-center gap-2 bg-[#FAB326] text-white text-xs px-4 py-2 rounded-full mb-6 shadow-lg">
-            <Image src="/earth.svg fill.png" alt="image" width={24} height={24} />
+            <Image
+              src="/earth.svg fill.png"
+              alt="image"
+              width={24}
+              height={24}
+            />
             Explore the world
           </div>
 
@@ -43,9 +48,12 @@ const Hero = () => {
 
       {/* Spacer to account for the overlapping card */}
       <div className=" bg-[#f5f6fa] -mt-24">
+        {/* Trusted By */}
+        <TrustedBy />
+      </div>
 
-      {/* Trusted By */}
-      <TrustedBy />
+      <div>
+        <PopularDestinations />
       </div>
     </main>
   );

@@ -10,7 +10,7 @@ const airlines = [
 
 const TrustedBy = () => {
   return (
-    <section className="bg-[#E8ECF9] pt-32 px-6 md:px-12 lg:px-16 relative">
+    <section className="bg-[#E8ECF9] pt-32 pb-5 px-6 md:px-12 lg:px-16 relative">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-8">
         {/* Left text */}
         <div className="shrink-0 max-w-50">
