@@ -71,9 +71,9 @@ const TopRated = () => {
       <div className="absolute inset-0 bg-[#009AC533] z-0" />
 
       {/* Content ABOVE overlay */}
-      <div className="relative z-10 mt-20 pt-20 pb-20">
+      <div className="relative z-10 max-w-5xl mx-auto mt-16 sm:mt-20 px-6 sm:px-6 md:px-10 lg:px-0 pt-16 sm:pt-20 pb-16 sm:pb-20">
         {/* Header */}
-        <div className="flex max-w-5xl mx-auto items-start justify-between px-4">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <h1 className="text-3xl font-bold text-black">Top Rated Hotels</h1>
             <p className="text-gray-600 text-sm mt-1">
@@ -82,7 +82,7 @@ const TopRated = () => {
           </div>
 
           {/* Buttons */}
-          <div className="flex gap-3 mt-2">
+          <div className="hidden sm:flex gap-3 mt-2">
             <button
               onClick={scrollPrev}
               className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-gray-100 transition"
@@ -101,7 +101,7 @@ const TopRated = () => {
 
         {/* Carousel */}
         <div className="mt-10">
-          <div className="max-w-5xl mx-auto pr-0">
+          <div className="w-full">
             <div
               className="overflow-hidden -mr-[calc((100vw-100%)/2)]"
               ref={emblaRef}

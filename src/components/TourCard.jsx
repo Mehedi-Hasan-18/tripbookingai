@@ -2,20 +2,21 @@ import Image from "next/image";
 
 const TourCard = ({ tour }) => (
   <div
-    className="embla__slide relative rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-shadow shrink-0 mr-5"
-    style={{ flex: "0 0 calc(33.333% - 14px)", minHeight: "420px" }}
+    className="
+      embla__slide relative rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-shadow shrink-0 mr-4 w-[85%]      sm:w-[60%] md:w-[45%] lg:w-[32%]"
+    style={{ minHeight: "420px" }}
   >
-    {/* Full-card background image */}
+    {/* Background Image */}
     <Image src={tour.img} alt={tour.title} fill className="object-cover" />
 
-    {/* Badge — sits above the white panel */}
+    {/* Badge */}
     <span
       className={`absolute top-4 left-4 z-10 text-xs font-semibold px-3 py-1 rounded-full ${tour.badgeColor}`}
     >
       {tour.badge}
     </span>
 
-    {/* White overlay panel anchored to the bottom */}
+    {/* Bottom Content */}
     <div className="absolute bottom-0 left-0 right-0 bg-white border border-gray-300 rounded-3xl p-5 z-10">
       <h3 className="text-lg font-bold text-gray-900 leading-snug">
         {tour.title}
@@ -34,7 +35,7 @@ const TourCard = ({ tour }) => (
         {tour.location}
       </div>
 
-      {/* Duration & guests */}
+      {/* Info */}
       <div className="flex items-center gap-4 mt-2 text-gray-400 text-sm">
         <div className="flex items-center gap-1">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
@@ -54,6 +55,7 @@ const TourCard = ({ tour }) => (
           </svg>
           {tour.duration}
         </div>
+
         <div className="flex items-center gap-1">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
             <circle cx="5" cy="4" r="2" stroke="#9CA3AF" strokeWidth="1.2" />
@@ -63,19 +65,12 @@ const TourCard = ({ tour }) => (
               strokeWidth="1.2"
               strokeLinecap="round"
             />
-            <circle cx="9" cy="4" r="1.5" stroke="#9CA3AF" strokeWidth="1.1" />
-            <path
-              d="M10.5 10.5C10.5 8.567 9.8 7.5 9 7.5"
-              stroke="#9CA3AF"
-              strokeWidth="1.1"
-              strokeLinecap="round"
-            />
           </svg>
           {tour.guests}
         </div>
       </div>
 
-      {/* Price & CTA */}
+      {/* Price */}
       <div className="flex items-center justify-between mt-5">
         <div>
           <span className="text-2xl font-bold text-gray-900">
@@ -83,7 +78,8 @@ const TourCard = ({ tour }) => (
           </span>
           <span className="text-gray-400 text-sm ml-1">/ person</span>
         </div>
-        <button className="bg-[#0640C3] hover:bg-[#0535a8] transition-colors text-white text-sm font-semibold px-5 py-2.5 rounded-full">
+
+        <button className="bg-[#0640C3] hover:bg-[#0535a8] text-white text-sm font-semibold px-5 py-2.5 rounded-full">
           Book Now
         </button>
       </div>

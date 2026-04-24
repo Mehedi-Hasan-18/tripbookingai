@@ -5,12 +5,20 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-[#1E4DB7] text-white">
-      <div className="max-w-7xl mx-auto  py-16">
+      <div className="max-w-7xl mx-auto py-16 px-6 lg:px-0">
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-10">
           {/* Logo + Description */}
-          <div className="col-span-2 md:pr-28">
-            <Image src="/logo.png" alt="logo" width={150} height={40} />
+          <div className="lg:col-span-2 ">
+            <div className="shrink-0">
+              <Image
+                src="/logo1.png"
+                alt="TripBooking.AI"
+                width={180}
+                height={40}
+                className="object-cover overflow-hidden"
+              />
+            </div>
             <p className="text-sm text-gray-200 mt-4 leading-relaxed">
               Dive into local recommendations for a truly authentic experience.
             </p>
@@ -44,7 +52,7 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div>
+          <div className="lg:col-span-1">
             <h3 className="font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-gray-200 text-sm">
               <li>Tour Guide</li>
@@ -56,7 +64,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="col-span-2 md:pl-14">
+          <div className="lg:col-span-2 md:pl-14">
             <h3 className="font-semibold mb-4">Newsletter</h3>
 
             <div className="flex items-center bg-white rounded-full overflow-hidden">
@@ -71,11 +79,10 @@ const Footer = () => {
             </div>
 
             {/* Payments */}
-            {/* Payments */}
             <div className="mt-6">
               <p className="mb-3 text-sm font-medium">Payments</p>
 
-              <div className="flex gap-3">
+              <div className="flex flex-wrap gap-3">
                 <div className="bg-white rounded-xl p-2 flex items-center justify-center">
                   <Image
                     src="/paypal.png"
@@ -123,30 +130,15 @@ const Footer = () => {
 
             <div className="flex gap-2">
               <div className="w-9 h-9 rounded-full border border-white flex items-center justify-center">
-                <Image
-                  src="/fb.png"
-                  alt="facebook"
-                  width={18}
-                  height={18}
-                />
+                <Image src="/fb.png" alt="facebook" width={18} height={18} />
               </div>
 
               <div className="w-9 h-9 rounded-full border border-white flex items-center justify-center">
-                <Image
-                  src="/x.png"
-                  alt="twitter"
-                  width={18}
-                  height={18}
-                />
+                <Image src="/x.png" alt="twitter" width={18} height={18} />
               </div>
 
               <div className="w-9 h-9 rounded-full border border-white flex items-center justify-center">
-                <Image
-                  src="/yt.png"
-                  alt="youtube"
-                  width={18}
-                  height={18}
-                />
+                <Image src="/yt.png" alt="youtube" width={18} height={18} />
               </div>
 
               <div className="w-9 h-9 rounded-full border border-white flex items-center justify-center">

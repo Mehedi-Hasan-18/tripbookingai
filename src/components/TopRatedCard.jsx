@@ -4,8 +4,15 @@ const TopRatedCard = ({ tour }) => (
   console.log(tour),
   (
     <div
-      className="embla__slide relative rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-shadow shrink-0 mr-5"
-      style={{ flex: "0 0 calc(28% - 14px)", minHeight: "420px" }}
+      className="
+        embla__slide relative rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-shadow shrink-0 mr-4
+        
+        w-[80%]
+        sm:w-[60%]   
+        md:w-[45%]    
+        lg:w-[28%]   
+  "
+      style={{ minHeight: "420px" }}
     >
       {/* Full-card background image */}
       <Image src={tour.img} alt={tour.title} fill className="object-cover" />
