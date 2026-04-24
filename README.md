@@ -1,55 +1,55 @@
 # Mehedi Hasan
 
 
-# TripBooking.AI 🌍✈️
+# TripBooking.AI
 
 A modern, responsive travel booking landing page built with **Next.js 16**, **React 19**, and **Tailwind CSS v4**. The UI showcases AI-powered travel deal discovery with sections for tour browsing, hotel search, popular destinations, and more.
 
 ---
 
-## 🚀 Features Implemented
+##  Features Implemented
 
-### 🧭 Navigation
+###  Navigation
 - Responsive navbar with active-link highlighting using `usePathname`
 - Links to Home, Tours, Hotels, Blog, About, and Contact pages
 - Hamburger menu for mobile with smooth open/close animation
 - Search and Sign In action buttons
 
-### 🏠 Hero Section
+###  Hero Section
 - Full-screen background image with overlay
 - "Explore the world" badge with globe icon
 - Headline and subtitle copy
 - **Search Form** overlapping the hero — supports tabbed switching between **Tours** and **Hotels**, with fields for Location, Check-in/Check-out dates, and Guest count
 
-### ✅ Trusted By
+###  Trusted By
 - Airline partner logos (EgyptAir, Delta, WestJet, Air France, etc.) displayed in a branded banner section
 
-### 🗺️ Popular Destinations
+###  Popular Destinations
 - Destination cards for Venice, Amsterdam, Budapest, Lisbon, London, Ottawa, and Paris — each showing a cover image and tour count
 - Promotional CTA card ("Crafting Your Perfect Travel Experience")
 - Responsive grid layout (1 → 2 → 4 columns)
 
-### 🎠 Featured Tours (Carousel)
+###  Featured Tours (Carousel)
 - Horizontally scrollable card carousel powered by **Embla Carousel**
 - Cards show tour badge (Top Rated, Best Sale, % Off, New), image, title, location, duration, guest count, and price
 - Prev/Next navigation buttons
 
-### 🖼️ Image Carousel
+###  Image Carousel
 - Auto-scrolling/manual image carousel between sections
 
-### ⭐ Top Rated Hotels
+###  Top Rated Hotels
 - Background-image section with tinted overlay
 - Embla Carousel of hotel cards with ratings and pricing
 - Responsive prev/next controls (hidden on mobile)
 
-### 📱 AI Deal Finder CTA
+###  AI Deal Finder CTA
 - Full-width promotional banner with headline and description
 - App Store and Google Play download buttons
 
-### 💳 Payment Methods
+###  Payment Methods
 - Logo strip displaying PayPal, Stripe, Payoneer, Visa, Cash App, Bitcoin, and Discover
 
-### 🔗 Footer
+###  Footer
 - Brand logo, tagline, and support phone number
 - Navigation columns: Company and Services
 - Newsletter email subscription input
@@ -59,7 +59,7 @@ A modern, responsive travel booking landing page built with **Next.js 16**, **Re
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Version |
 |---|---|
@@ -71,7 +71,7 @@ A modern, responsive travel booking landing page built with **Next.js 16**, **Re
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 
@@ -122,7 +122,7 @@ npm run lint
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 tripbookingai/
@@ -155,7 +155,7 @@ tripbookingai/
 
 ---
 
-## 📝 Assumptions
+##  Assumptions
 
 - **UI only — no backend or API integration.** All tour, hotel, and destination data is hardcoded as static arrays directly in the components. There is no database, CMS, or external travel API connected.
 - **Search form is non-functional.** The location, date, and guest fields are display-only UI elements. Submitting the form does not trigger any search or navigation.
@@ -165,6 +165,6 @@ tripbookingai/
 - **No authentication.** The "Sign In" button in the navbar is a UI element only — there is no auth flow implemented.
 - **Images are local assets.** All images are stored in `/public` and served statically. No remote image domains are configured in `next.config.mjs`.
 
-## 📄 License
+##  License
 
 All rights reserved to Mehedi Hasan
